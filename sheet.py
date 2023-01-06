@@ -2,16 +2,9 @@
 """ 
     Multi line comment
 """
-a = 1
-print(a)
-A = 2
-print(a, A)
-A = 3
-print(A)
-
-b, c = 9, 5
-print(b / c) # 1.8
-print(b // c) # 1
+a, A = 1, 2
+print(a / A) # 0.5
+print(a // A) # 0
 
 name = 'CB'
 print(f"This is a name {name} of length {len(name)}")
