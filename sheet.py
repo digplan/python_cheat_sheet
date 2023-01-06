@@ -21,7 +21,7 @@ d = [1, 2, 3, 'four']
 a = [None] * 3
 
 a, b, c, e = d
-d.sort()
+#d.sort()
 
 for i, v in enumerate(range(3)):
     print(i, v)
@@ -44,10 +44,17 @@ print(f"New copy {e}")
 # Tuple immutable, unpack
 #
 
+# Dictionary
 f = {'one': 'two', 'key': 'val'}
 g = dict()
 print(f)
 print(type(f)) # <class 'dict'>
+f.keys()
+f.values()
+
+# Dict Comprehension
+{k: v for k ,v in f.items()}
+
 # h = input('Enter some data: ')
 
 # keys, values, get update
@@ -62,6 +69,8 @@ print("Yes" if True == True else "No")
 # fir line in file
 
 # functions
+fn = lambda x: x**2
+(lambda x: x**2)(3)
 
 # classes, modules, decorators, generators, 
 
@@ -69,6 +78,8 @@ print("Yes" if True == True else "No")
 import sys, os
 print(f"Arguments: {sys.argv}")
 # print(f"Arguments: {os.environ}")
+# sys.version
+
 
 if __name__ == '__main__':
     print("myfile")
@@ -79,3 +90,8 @@ time.time()
 from datetime import date, datetime
 date.today()
 datetime.utcnow().isoformat()
+
+# Assert
+assert(True)
+
+sys
